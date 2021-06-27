@@ -1,0 +1,25 @@
+{
+  "name": "dream-team",
+  "version": "1.0.0",
+  "description": "Work Team Generator Challenge",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Takes101/dream-team.git"
+  },
+  "author": "William Takes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Takes101/dream-team/issues"
+  },
+  "homepage": "https://github.com/Takes101/dream-team#readme",
+  "devDependencies": {
+    "jest": "^27.0.5"
+  }
+}
