@@ -4,11 +4,9 @@ const inquirer = require('inquirer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
-const Manager = require('./lib/Manager');
-const { template } = require('@babel/core');
-const { ADDRGETNETWORKPARAMS } = require('dns');
-const { type } = require('os');
-const { listenerCount } = require('events');
+const Employee = require('./lib/Employee');
+const path = require('path');
+
 
 
 function getManager() {
