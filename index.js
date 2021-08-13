@@ -1,16 +1,17 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Employee = require('./lib/Employee');
 const path = require('path');
+const team = [];
+const renderPage = require('./dist/index.html');
 
 
 
 function getManager() {
-    console.log("It's time to make your drream team!");
+    console.log("It's time to make your dream team!");
 
     inquirer
         .prompt ([
@@ -141,10 +142,10 @@ function addEngineer() {
             message: "What is Engineer's GitHub?",
             validate: answer => {
                 if (answer === '') {
-                    return true;
+                    console.log("Please enter a valid GitHub account!");
+                    return false;
                 }
-                console.log("Please enter a valid GitHub account!");
-                return false;
+                    return true;
             }
 
         }
